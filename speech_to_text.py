@@ -3,6 +3,7 @@ import speech_recognition as sr
 
 r = sr.Recognizer()
 
+# Script without any function
 with sr.Microphone() as source:
         print("\nSpeak something...")
         audio = r.listen(source)
@@ -15,6 +16,7 @@ with sr.Microphone() as source:
             print(e)
             print("Error, couldn't recognize your voice.")
 
+# Script with a function
 def take_my_command():
     with sr.Microphone() as source:
         print("\nSpeak something...")
